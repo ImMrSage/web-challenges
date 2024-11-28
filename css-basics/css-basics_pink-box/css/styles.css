@@ -27,4 +27,9 @@ div {
   border-radius: 8px;
 
   /* ✨ Feel free to experiment! */
+  padding-top: 60px;
+  padding-left: 15px;
+  padding-bottom: 50px;
+  margin: auto;
+  margin-top: 100px;
 }
