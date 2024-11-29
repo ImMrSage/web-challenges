@@ -58,6 +58,9 @@ main {
 
 .box--center {
   background-color: #3498db;
+  position: absolute;
+  top: 250px;
+  left: 210px;
 }
 
 .box--bottom-left {
