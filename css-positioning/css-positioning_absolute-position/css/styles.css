@@ -46,7 +46,8 @@ main {
   background-color: #85c1e9;
   position: absolute;
   top: 0;
-  left: 210px;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
 
 .box--top-right {
@@ -59,8 +60,9 @@ main {
 .box--center {
   background-color: #3498db;
   position: absolute;
-  top: 250px;
-  left: 210px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .box--bottom-left {
@@ -74,7 +76,8 @@ main {
   background-color: #21618c;
   position: absolute;
   bottom: 0;
-  left: 210px;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
 
 .box--bottom-right {
