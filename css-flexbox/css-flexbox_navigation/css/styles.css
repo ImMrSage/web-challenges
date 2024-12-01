@@ -21,9 +21,15 @@ ul {
   padding: 20px;
   color: #252629;
   background-color: #f3f5f9;
+  text-align: center;
 }
 
 .navigation__menu {
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .navigation__link {
