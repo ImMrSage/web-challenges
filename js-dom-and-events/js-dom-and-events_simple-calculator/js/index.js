@@ -77,4 +77,31 @@ const btnSubtrOne = document.querySelector('[data-js="decrease-by-one"]');
 const btnSubtrFive = document.querySelector('[data-js="decrease-by-five"]');
 const btnMultiTwo = document.querySelector('[data-js="multiply-by-two"]');
 const btnDivideTwo = document.querySelector('[data-js="divide-by-two"]');
+
+btnAddOne.addEventListener("click", () => {
+  operand1++;
+  console.log(operand1);
+});
+
+btnAddFive.addEventListener("click", () => {
+  operand1 += 5;
+  console.log(operand1);
+});
+
+btnSubtrOne.addEventListener("click", () => {
+  operand1--;
+  console.log(operand1);
+});
+btnSubtrFive.addEventListener("click", () => {
+  operand1 -= 5;
+  console.log(operand1);
+});
+btnMultiTwo.addEventListener("click", () => {
+  operand1 *= 2;
+  console.log(operand1);
+});
+btnDivideTwo.addEventListener("click", () => {
+  operand1 /= 2;
+  console.log(operand1);
+});
 // --^-- write your code here --^--
