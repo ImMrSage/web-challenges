@@ -8,7 +8,11 @@ const operand2 = 4;
 // Step 1: Use `document.querySelector` to select each button by its `data-js` attribute.
 
 // --v-- write your code here --v--
-
+const add = document.querySelector('[data-js="add"]');
+const multiply = document.querySelector('[data-js="subtract"]');
+const divide = document.querySelector('[data-js="divide"]');
+const exponent = document.querySelector('[data-js="exponent"]');
+const modulo = document.querySelector('[data-js="modulo"]');
 // --^-- write your code here --^--
 
 /* 
