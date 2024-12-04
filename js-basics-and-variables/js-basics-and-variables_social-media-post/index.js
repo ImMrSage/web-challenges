@@ -10,7 +10,15 @@ console.clear();
 */
 
 // --v-- write your code here --v--
+let post = {
+  title: "The coolest movie of the year",
+  text: "Dune 2 is the best movie of the year, because...",
+  likes: 200,
+  author: "Beluga",
+  isReported: true,
+};
 
+console.log(post);
 // --^-- write your code here --^--
 
 /*
@@ -18,5 +26,29 @@ console.clear();
 */
 
 // --v-- write your code here --v--
+post.likes++;
 
+console.log("Updated likes: " + post.likes);
+console.log("Updated post:", post);
 // --^-- write your code here --^--
+
+const title = "Top 5 movies of 2024";
+const text =
+  "Dune 2, Deadpool and Wolverine, Alien: Romulus, Venom 3, Gladiator 2";
+let likes = 50;
+const author = "ImMrSage";
+const isReported = true;
+
+console.log(title, "\n" + text, "\n" + likes, "\n" + author, "\n" + isReported);
+
+likes++;
+
+console.log(`Updated likes: 
+${likes} `);
+
+console.log(`Updated post: 
+  Title: ${title} 
+  Text: ${text}
+  Likes: ${likes}
+  Author: ${author}
+  Reported: ${isReported}`);
