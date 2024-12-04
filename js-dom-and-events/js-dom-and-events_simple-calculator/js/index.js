@@ -1,7 +1,7 @@
 console.clear();
 
-const operand1 = 12;
-const operand2 = 4;
+let operand1 = 12;
+let operand2 = 4;
 
 // ----- Mathematical Operations -----
 
@@ -71,5 +71,10 @@ Step 2: Add event listeners to update `operand1` based on the button clicked. Lo
 */
 
 // --v-- write your code here --v--
-
+const btnAddOne = document.querySelector('[data-js="increase-by-one"]');
+const btnAddFive = document.querySelector('[data-js="increase-by-five"]');
+const btnSubtrOne = document.querySelector('[data-js="decrease-by-one"]');
+const btnSubtrFive = document.querySelector('[data-js="decrease-by-five"]');
+const btnMultiTwo = document.querySelector('[data-js="multiply-by-two"]');
+const btnDivideTwo = document.querySelector('[data-js="divide-by-two"]');
 // --^-- write your code here --^--
