@@ -10,7 +10,14 @@ console.clear();
 */
 
 // --v-- write your code here --v--
+let post = {
+  title: "The coolest movie of the year",
+  text: "Dune 2 is the best movie of the year, because...",
+  author: "Beluga",
+  isReported: true,
+};
 
+let likes = 0;
 // --^-- write your code here --^--
 
 /*
