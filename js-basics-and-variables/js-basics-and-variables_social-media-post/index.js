@@ -31,3 +31,24 @@ post.likes++;
 console.log("Updated likes: " + post.likes);
 console.log("Updated post:", post);
 // --^-- write your code here --^--
+
+const title = "Top 5 movies of 2024";
+const text =
+  "Dune 2, Deadpool and Wolverine, Alien: Romulus, Venom 3, Gladiator 2";
+let likes = 50;
+const author = "ImMrSage";
+const isReported = true;
+
+console.log(title, "\n" + text, "\n" + likes, "\n" + author, "\n" + isReported);
+
+likes++;
+
+console.log(`Updated likes: 
+${likes} `);
+
+console.log(`Updated post: 
+  Title: ${title} 
+  Text: ${text}
+  Likes: ${likes}
+  Author: ${author}
+  Reported: ${isReported}`);
