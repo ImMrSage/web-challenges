@@ -5,4 +5,14 @@ const darkMode = document.querySelector('[data-js="dark-mode-button"]');
 const lightMode = document.querySelector('[data-js="light-mode-button"]');
 const toggleMode = document.querySelector('[data-js="toggle-button"]');
 
-darkMode.addEventListener("click", () => {});
+darkMode.addEventListener("click", () => {
+  bodyElement.classList.add("dark");
+});
+
+lightMode.addEventListener("click", () => {
+  bodyElement.classList.remove("dark");
+});
+
+toggleMode.addEventListener("click", () => {
+  bodyElement.classList.toggle("dark");
+});
