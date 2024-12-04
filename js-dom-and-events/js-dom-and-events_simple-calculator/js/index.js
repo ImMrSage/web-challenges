@@ -28,7 +28,32 @@ For each operation (add, subtract, multiply, divide, exponent, and modulo):
 
 // --v-- write your code here --v--
 buttonAdd.addEventListener("click", () => {
+  result = operand1 + operand2;
+  console.log(result);
+});
+
+buttonSubtract.addEventListener("click", () => {
   result = operand1 - operand2;
+  console.log(result);
+});
+
+buttonMultiply.addEventListener("click", () => {
+  result = operand1 * operand2;
+  console.log(result);
+});
+
+buttonDivide.addEventListener("click", () => {
+  result = operand1 / operand2;
+  console.log(result);
+});
+
+buttonExponent.addEventListener("click", () => {
+  result = operand1 ** operand2;
+  console.log(result);
+});
+
+buttonModulo.addEventListener("click", () => {
+  result = operand1 % operand2;
   console.log(result);
 });
 // --^-- write your code here --^--
