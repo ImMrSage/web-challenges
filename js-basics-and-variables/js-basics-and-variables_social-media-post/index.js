@@ -13,11 +13,12 @@ console.clear();
 let post = {
   title: "The coolest movie of the year",
   text: "Dune 2 is the best movie of the year, because...",
+  likes: 200,
   author: "Beluga",
   isReported: true,
 };
 
-let likes = 0;
+console.log(post);
 // --^-- write your code here --^--
 
 /*
@@ -25,5 +26,8 @@ let likes = 0;
 */
 
 // --v-- write your code here --v--
+post.likes++;
 
+console.log("Updated likes: " + post.likes);
+console.log("Updated post:", post);
 // --^-- write your code here --^--
