@@ -20,3 +20,5 @@ let monthlyContribution = 1000;
 let months = 12;
 
 let totalSavings = startingBalance + monthlyContribution * months;
+
+console.log("Total Savings: ", totalSavings);
