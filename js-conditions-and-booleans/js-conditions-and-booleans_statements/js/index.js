@@ -21,18 +21,24 @@ if (number % 2 === 0) {
 }
 
 // Part 3: Hotdogs
-const numberOfHotdogs = 2;
+const numberOfHotdogs = 120;
+let pricePerHotdog;
 
 if (numberOfHotdogs < 5) {
-  console.log(
-    `Your bill for ${numberOfHotdogs} hotdogs: $${numberOfHotdogs * 2}`
-  );
-  // } else if (numberOfHotdogs === 5) {
-  //   console.log(
-  //     `Your bill for ${numberOfHotdogs} hotdogs: $, ${numberOfHotdogs * 2}`
-  //   );
+  pricePerHotdog = 2;
+} else if ((numberOfHotdogs >= 5) & (numberOfHotdogs < 100)) {
+  pricePerHotdog = 1.5;
+} else if ((numberOfHotdogs >= 100) & (numberOfHotdogs < 1000000)) {
+  pricePerHotdog = 1;
+} else if (numberOfHotdogs >= 1000000) {
+  pricePerHotdog = 0.1;
 } else {
   console.log("Please, choose the number of hot dogs you want to buy.");
+}
+
+if (pricePerHotdog !== undefined) {
+  let bill = numberOfHotdogs * pricePerHotdog;
+  console.log(`Your bill for ${numberOfHotdogs} hotdogs: $${bill}`);
 }
 
 // Part 4: Daytime
