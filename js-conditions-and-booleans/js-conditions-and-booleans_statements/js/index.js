@@ -42,9 +42,9 @@ if (pricePerHotdog !== undefined) {
 }
 
 // Part 4: Daytime
-const currentHour = 12;
+const currentHour = 20;
 
-const statement = ".";
+const statement = currentHour < 17 ? "Still need to learn..." : "Partytime!!!";
 
 console.log(statement);
 
