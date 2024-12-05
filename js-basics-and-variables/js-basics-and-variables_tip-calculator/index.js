@@ -17,3 +17,5 @@ based on the cost of the meal and the percentage of the tip.
 
 let mealCost = 25;
 let tipPercentage = 15;
+
+let tipAmount = (mealCost * tipPercentage) / 100;
