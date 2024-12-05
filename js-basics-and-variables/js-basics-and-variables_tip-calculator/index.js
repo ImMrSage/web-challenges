@@ -19,3 +19,9 @@ let mealCost = 25;
 let tipPercentage = 15;
 
 let tipAmount = (mealCost * tipPercentage) / 100;
+
+let totalCost = mealCost + tipAmount;
+
+console.log(
+  `\n Meal Cost: ${mealCost}, \n Tip Amount: ${tipAmount}, \n Total Cost: ${totalCost}`
+);
