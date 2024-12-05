@@ -12,7 +12,7 @@ if (receivedPassword === SUPER_SECRET_PASSWORD) {
 }
 
 // Part 2: Even / Odd
-const number = 6;
+const number = 7;
 
 if (number % 2 === 0) {
   console.log("even number");
@@ -21,7 +21,19 @@ if (number % 2 === 0) {
 }
 
 // Part 3: Hotdogs
-const numberOfHotdogs = 42;
+const numberOfHotdogs = 2;
+
+if (numberOfHotdogs < 5) {
+  console.log(
+    `Your bill for ${numberOfHotdogs} hotdogs: $${numberOfHotdogs * 2}`
+  );
+  // } else if (numberOfHotdogs === 5) {
+  //   console.log(
+  //     `Your bill for ${numberOfHotdogs} hotdogs: $, ${numberOfHotdogs * 2}`
+  //   );
+} else {
+  console.log("Please, choose the number of hot dogs you want to buy.");
+}
 
 // Part 4: Daytime
 const currentHour = 12;
