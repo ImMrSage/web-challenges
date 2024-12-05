@@ -18,3 +18,5 @@ Let's build a small program to track your savings goals!
 let startingBalance = 3000;
 let monthlyContribution = 1000;
 let months = 12;
+
+let totalSavings = startingBalance + monthlyContribution * months;
