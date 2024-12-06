@@ -32,12 +32,12 @@ Then:
 */
 
 // --v-- write your code here --v--
-console.log(book);
+// console.log(book);
 
 book.sales = "1000";
 book.rating = "9/10";
 
-console.log(book);
+// console.log(book);
 // --^-- write your code here --^--
 
 /*
@@ -50,5 +50,17 @@ console.log(book);
 */
 
 // --v-- write your code here --v--
+function logBookData() {
+  console.log(book);
+}
 
+logBookData();
+
+book.sales = "1200";
+
+logBookData();
+
+book.sales = "2000";
+
+logBookData();
 // --^-- write your code here --^--
