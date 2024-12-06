@@ -42,5 +42,10 @@ Note: Separation text refers to the text that is logged in the console before ea
 */
 
 // --v-- write your code here --v--
+function separator(exerciseNumber) {
+  console.log("-------------");
+  console.log(`Exercise ${exerciseNumber}:`);
+}
 
+separator(4);
 // --^-- write your code here --^--
