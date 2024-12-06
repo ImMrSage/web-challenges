@@ -9,7 +9,10 @@ console.clear();
 */
 
 // --v-- write your code here --v--
-
+let title = "Title: Elder Devs";
+let author = "Author: ImMrSage";
+let rating = "rating: 9/10";
+let sales = "Sales: 500";
 // --^-- write your code here --^--
 
 /*
