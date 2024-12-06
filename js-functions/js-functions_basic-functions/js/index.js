@@ -9,10 +9,12 @@ console.clear();
 */
 
 // --v-- write your code here --v--
-let title = "Title: Elder Devs";
-let author = "Author: ImMrSage";
-let rating = "rating: 9/10";
-let sales = "Sales: 500";
+const book = {
+  title: "Title: Elder Devs",
+  author: "Author: ImMrSage",
+  rating: "rating: 7/10",
+  sales: "Sales: 500",
+};
 // --^-- write your code here --^--
 
 /*
@@ -30,7 +32,12 @@ Then:
 */
 
 // --v-- write your code here --v--
+console.log(book);
 
+book.sales = "1000";
+book.rating = "9/10";
+
+console.log(book);
 // --^-- write your code here --^--
 
 /*
