@@ -22,8 +22,8 @@ Update the content and style of the page based on the current day and time.
 
 const display = document.querySelector('[data-js="display"]');
 
-function getGreeting(currentHour) {
-  const currentHour = new Date().getHours;
+function getGreeting() {
+  const currentHour = new Date().getHours();
   if (currentHour >= 6 && currentHour <= 12) {
     return "Good Morning!";
   } else if (currentHour >= 13 && currentHour <= 18) {
