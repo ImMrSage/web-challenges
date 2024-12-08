@@ -7,7 +7,7 @@ Use implicit returns when possible.
 HINT: You can find more information about arrow functions and implicit returns in the handout.
 */
 
-function getCurrentHour() {
+const getCurrentHour = () => {
   const now = new Date();
   const currentHour = now.getHours();
   if (currentHour === 0) {
@@ -19,21 +19,21 @@ function getCurrentHour() {
   } else {
     return currentHour - 12 + "pm";
   }
-}
+};
 
-function getVectorLength(x, y, z) {
-  return (x ** 2 + y ** 2 + z ** 2) ** 0.5;
-}
+console.log(getCurrentHour());
 
-function cleanInput(string) {
-  return string.toLowerCase().trim();
-}
+const getVectorLength = (x, y, z) => (x ** 2 + y ** 2 + z ** 2) ** 0.5;
+console.log(getVectorLength(2, 3, 4));
+
+const cleanInput = (string) => string.toLowerCase().trim();
+console.log(cleanInput("THIS IS BIG, this is small, ThIs Is wEiRD"));
 
 /*
 Rewrite the following arrow functions as classic functions.
 */
 
-const isOddAndSmall = (number) => {
+function isOddAndSmall(number) {
   if (number > 10) {
     return false;
   }
@@ -43,8 +43,18 @@ const isOddAndSmall = (number) => {
   }
 
   return true;
-};
+}
 
-const add3 = (a, b, c) => a + b + c;
+console.log(isOddAndSmall(55));
 
-const repeat10 = (string) => string.repeat(10);
+function add3(a, b, c) {
+  return a + b + c;
+}
+
+console.log(add3(3, 4, 5));
+
+function repeat10(string) {
+  return string.repeat(10);
+}
+
+console.log(repeat10("hello there! "));
