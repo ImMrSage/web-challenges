@@ -33,7 +33,7 @@ console.log(cleanInput("THIS IS BIG, this is small, ThIs Is wEiRD"));
 Rewrite the following arrow functions as classic functions.
 */
 
-const isOddAndSmall = (number) => {
+function isOddAndSmall(number) {
   if (number > 10) {
     return false;
   }
@@ -43,8 +43,18 @@ const isOddAndSmall = (number) => {
   }
 
   return true;
-};
+}
 
-const add3 = (a, b, c) => a + b + c;
+console.log(isOddAndSmall(55));
 
-const repeat10 = (string) => string.repeat(10);
+function add3(a, b, c) {
+  return a + b + c;
+}
+
+console.log(add3(3, 4, 5));
+
+function repeat10(string) {
+  return string.repeat(10);
+}
+
+console.log(repeat10("hello there! "));
