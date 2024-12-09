@@ -68,14 +68,18 @@ h1 {
 
 .box--two {
   background-color: lightgreen;
-
   width: 100px;
   height: 100px;
+}
 
-  @media (min-width: 599px) {
+@media (min-width: 599px) {
+  .box--two {
     width: 200px;
   }
-  @media (min-width: 1199px) {
+}
+
+@media (min-width: 1199px) {
+  .box--two {
     width: 400px;
   }
 }
@@ -85,6 +89,13 @@ h1 {
 
   width: 50px;
   height: 250px;
+}
+
+@media (orientation: landscape) {
+  .box--three {
+    height: 50px;
+    width: 200px;
+  }
 }
 
 .box--four {
