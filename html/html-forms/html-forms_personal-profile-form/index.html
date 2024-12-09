@@ -12,12 +12,18 @@
   <body>
     <section>
       <h1 id="title">Create Your Personal Profile</h1>
-      <p id="description">
-        We want to get to know you! Please enter your personal information.
-      </p>
-      <form action="">
-        <fieldset>
+      <form action="" aria-labelledby="title">
+        <p id="description">
+          We want to get to know you! Please enter your personal information.
+        </p>
+        <fieldset aria-labelledby="description">
           <legend>Personal information</legend>
+          <label for="first-name">First Name:</label>
+          <input type="text" id="first-name" required />
+          <label for="last-name">Last Name:</label>
+          <input type="text" id="last-name" required />
+          <label for="birth-date">Your Birthday:</label>
+          <input type="date" id="birth-date" required />
         </fieldset>
       </form>
     </section>
