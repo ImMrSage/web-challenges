@@ -71,6 +71,13 @@ h1 {
 
   width: 100px;
   height: 100px;
+
+  @media (min-width: 599px) {
+    width: 200px;
+  }
+  @media (min-width: 1199px) {
+    width: 400px;
+  }
 }
 
 .box--three {
