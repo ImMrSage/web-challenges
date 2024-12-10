@@ -18,11 +18,11 @@ form.addEventListener("submit", (event) => {
   // --v-- write your code here --v--
   if (tosCheckbox.checked === true) {
     hideTosError();
-  } else {
-    showTosError();
-  }
-  // --^-- write your code here --^--
+    alert("Form submitted");
+  } // --^-- write your code here --^--
 
   // eslint-disable-next-line no-alert
-  alert("Form submitted");
+  else {
+    showTosError();
+  }
 });
