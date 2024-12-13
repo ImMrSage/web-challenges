@@ -42,5 +42,12 @@ main.append(navElement);
 navElement.append(ul);
 
 // --v-- write or modify code below this line --v--
-
+for (item in nav) {
+  const li = document.createElement("li");
+  const aTag = document.createElement("a");
+  ul.append(li);
+  li.append(aTag);
+  aTag.href = nav[item].href;
+  aTag.textContent = nav[item].text;
+}
 // --^-- write or modify code above this line --^--
