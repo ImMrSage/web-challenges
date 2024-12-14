@@ -34,6 +34,9 @@ const questionsAndAnswersTogether = cards.map((item) => {
 }); // ["How often can I use <header>? - As often as you like.", ...]
 console.log(questionsAndAnswersTogether);
 
-const questionAndAnswer = null; // [{ question: 'How often can I use <header>?', answer: 'As often as you like.'}, {...}]
+const questionAndAnswer = cards.map(
+  (item) => `question: "${item.question}" , answer: "${item.answer}"`
+); // [{ question: 'How often can I use <header>?', answer: 'As often as you like.'}, {...}]
+console.log(questionAndAnswer);
 
 export { lowerCaseAnswers, questionsAndAnswersTogether, questionAndAnswer };
