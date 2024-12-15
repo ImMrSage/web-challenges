@@ -27,14 +27,20 @@ const cards = [
 const onlyCardWithIdTwo = cards.filter((item) => {
   return item.id.includes("2");
 });
-console.log(onlyCardWithIdTwo);
+console.log("Only cards with id 2: ", onlyCardWithIdTwo);
 
 const allCardsWith3Tags = cards.filter((item) => {
   return item.tags && item.tags.length === 3;
 });
-console.log(allCardsWith3Tags);
+console.log("All cards with 3 tags: ", allCardsWith3Tags);
 
-const allCardsThatAreNotBookmarked = null;
+const allCardsThatAreNotBookmarked = cards.filter(
+  (item) => item.isBookmarked === false
+);
+console.log(
+  "All Cards that are not bookmarked: ",
+  allCardsThatAreNotBookmarked
+);
 
 const allCardsWithTagsHTMLOrJSThatAreBookmarked = null;
 
