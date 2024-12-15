@@ -29,7 +29,10 @@ const onlyCardWithIdTwo = cards.filter((item) => {
 });
 console.log(onlyCardWithIdTwo);
 
-const allCardsWith3Tags = null;
+const allCardsWith3Tags = cards.filter((item) => {
+  return item.tags && item.tags.length === 3;
+});
+console.log(allCardsWith3Tags);
 
 const allCardsThatAreNotBookmarked = null;
 
