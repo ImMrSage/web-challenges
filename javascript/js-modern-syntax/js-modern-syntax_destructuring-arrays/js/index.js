@@ -36,7 +36,6 @@ as variable called `lastName`.
 
 const students = ["Christina", "Jon", "Alexandare"];
 export const [, , lastName] = students;
-console.log(lastName);
 
 /*
 EXERCISE 5
@@ -45,6 +44,8 @@ Assign each name to a variable called "student1" through "student5", in the give
 */
 
 const nestedStudents = ["Chris", ["Ahmad", "Antigoni"], ["Toby", "Sam"]];
+export const [student1, [student2, student3], [student4, student5]] =
+  nestedStudents;
 
 /*
 EXERCISE 6
