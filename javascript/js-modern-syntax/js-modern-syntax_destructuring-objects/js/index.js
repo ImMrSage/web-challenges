@@ -40,6 +40,8 @@ const dog = {
   age: 5,
 };
 
+export const {name : dogName, breed: dogBreed, age: dogAge} = dog
+
 /*
 EXERCISE 4
 Extract the `lastName` property from the `person` object as `personLastName`.
@@ -51,6 +53,8 @@ const person = {
   age: 24,
   firstName: "Alex",
 };
+
+export const {lastName : personLastName, ...moreInformation}
 
 /*
 EXERCISE 5
