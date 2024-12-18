@@ -55,10 +55,11 @@ Keep in mind that you need to export the variable `result` to make the test work
 
 const values = [1, 6, 7, 9, 12, 5, 4];
 
-const result = add(1); // Spread values inside this function call
+export const result = add(...values); // Spread values inside this function call
 
 function add(...values) {
   return values.reduce(
     (previousValue, currentValue) => previousValue + currentValue
   );
 }
+console.log(result);
