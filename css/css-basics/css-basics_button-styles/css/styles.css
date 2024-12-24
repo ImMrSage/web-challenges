@@ -31,6 +31,11 @@ button {
 Make sure not to put your code into the comments, because then nothing will happen. */
 
 .button1 {
+  border-radius: 20px;
+  background-color: azure;
+  font-family: "Times New Roman", Times, serif;
+  font-size: large;
+  font-style: italic;
   /* Style me! Change my border, set a border radius or try out other styles. :) */
 }
 
