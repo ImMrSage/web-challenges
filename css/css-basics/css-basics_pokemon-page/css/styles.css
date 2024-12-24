@@ -57,7 +57,15 @@ h2 {
 */
 
 section {
+  background-color: white;
+  padding: 20px;
+  margin: 10px;
+  border-left: solid 5px orange;
   /* Your solution */
+}
+
+.favourites {
+  border-left: solid 5px gold;
 }
 
 /* ------- Headings Part 2 ------- */
@@ -71,7 +79,16 @@ section {
 */
 
 .subtitle {
+  border-left: solid 3px gold;
+  border-right: solid 3px gold;
+  display: inline;
+  padding: 0 10px;
   /* Your solution */
+}
+
+.favourites .subtitle {
+  border-left: solid 3px orange;
+  border-right: solid 3px orange;
 }
 
 /* ------- List ------- */
