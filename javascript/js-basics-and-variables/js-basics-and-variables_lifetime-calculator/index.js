@@ -25,3 +25,6 @@ const remainingDays = lifeSpan - daysLived;
 console.log("Your current age is: " + currentAge);
 console.log(`You have lived ${daysLived} days`);
 console.log(`You still have ${remainingDays} days to live`);
+console.log(
+  `You have lived ${(daysLived - lifeSpan) * 100}% of your expected life`
+);
