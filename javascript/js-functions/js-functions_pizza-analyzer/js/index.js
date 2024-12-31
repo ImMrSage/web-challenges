@@ -18,6 +18,14 @@ pizzaInput2.addEventListener("input", () => {
 
 // Task 1
 // define the function calculatePizzaGain here
+function calculatePizzaGain(diameter1, diameter2) {
+  diameter1 = pizzaInput1.value;
+  diameter2 = pizzaInput2.value;
+  pizza1Area = (diameter1 * Math.PI) / 4;
+  pizza2Area = (diameter2 * Math.PI) / 4;
+  pizzaGain = ((pizza2Area - pizza1Area) / pizza1Area) * 100;
+  return pizzaGain;
+}
 
 // Task 2
 // define the function updatePizzaDisplay here
