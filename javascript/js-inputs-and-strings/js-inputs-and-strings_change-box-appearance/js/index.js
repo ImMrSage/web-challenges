@@ -8,7 +8,14 @@ const box = document.querySelector('[data-js="box"]');
 const saturation = 70;
 const lightness = 60;
 
+//Color slider
 inputColor.addEventListener("input", () => {
   const hue = inputColor.value;
   box.style.backgroundColor = `hsl(${hue}, ${saturation}%, ${lightness}%)`;
+});
+
+//Border Radius slider
+inputRadius.addEventListener("input", () => {
+  const radius = inputRadius.value;
+  box.style.borderRadius = `${radius}%`;
 });
