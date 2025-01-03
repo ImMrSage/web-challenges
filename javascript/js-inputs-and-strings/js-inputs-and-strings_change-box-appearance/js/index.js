@@ -19,3 +19,9 @@ inputRadius.addEventListener("input", () => {
   const radius = inputRadius.value;
   box.style.borderRadius = `${radius}%`;
 });
+
+//Rotation slider
+inputRotation.addEventListener("input", () => {
+  const rotation = inputRotation.value;
+  box.style.transform = `rotate(${rotation}deg)`;
+});
