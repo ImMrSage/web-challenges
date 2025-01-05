@@ -6,14 +6,22 @@ function renderStars(filledStars) {
   // Reset the star container before re-rendering stars
   starContainer.innerHTML = "";
 
-  // --v-- write or modify code below this line --v--
+  //Loop
   for (let i = 1; i <= 5; i++) {
     const star = `<img src='assets/${
       i <= filledStars ? "star-filled" : "star-empty"
-    }.svg' alt='assets/star-empty.svg'>`;
+    }.svg' alt="Star ${i}" style="cursor: pointer;">`;
+
     starContainer.innerHTML += star;
+
+    // Add click event listener to each star after rendering
+    const stars = document.querySelectorAll("img");
+    stars.forEach((star, index) => {
+      star.addEventListener("click", () => {
+        renderStars(index + 1);
+      });
+    });
   }
-  // --^-- write or modify code above this line --^--
 }
 
-renderStars(3);
+renderStars(0);
