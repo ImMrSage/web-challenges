@@ -33,3 +33,9 @@ angelfishArticle.innerHTML = `    <div class="product__body">
       <button type="button" class="product__buy-button">Buy</button>
     </footer>
     `;
+
+const button = angelfishArticle.querySelector("button");
+button.addEventListener("click", () => {
+  console.log(name);
+  console.log(price);
+});
