@@ -16,4 +16,4 @@ function renderStars(filledStars) {
   // --^-- write or modify code above this line --^--
 }
 
-renderStars(2);
+renderStars(3);
