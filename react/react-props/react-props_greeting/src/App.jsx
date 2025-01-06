@@ -1,9 +1,21 @@
 import "./styles.css";
 
 export default function App() {
-  return <Greeting name="John" />;
+  return (
+    <div>
+      <Greeting name="Alex" />
+      <Greeting name="Andrea" isCoach />
+      <Greeting name="Denise" />
+      <Greeting name="Joshua" />
+      <Greeting name="Jessica" isCoach />
+      <Greeting name="Gunnar" />
+      <Greeting name="Roland" isCoach />
+      <Greeting name="Philipp" />
+      <Greeting name="Uschi" />
+    </div>
+  );
 }
 
-function Greeting({ name }) {
-  return <h1>Hello, {name}!</h1>;
+function Greeting({ name, isCoach }) {
+  return <h2>Hello, {isCoach ? "coach " + name : name}!</h2>;
 }
