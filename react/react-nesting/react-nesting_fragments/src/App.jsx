@@ -12,10 +12,10 @@ export default function App() {
 
 function Boxes() {
   return (
-    <div>
+    <>
       <Box color="#007bff" />
       <Box color="#fc3" />
       <Box color="#ff3333" />
-    </div>
+    </>
   );
 }
