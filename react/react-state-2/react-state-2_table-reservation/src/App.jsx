@@ -10,7 +10,7 @@ export default function App() {
   }
 
   function handleDelete() {
-    setPeople(people - 1);
+    setPeople(people > 0 ? people - 1 : 0);
   }
   return (
     <div className="container">
