@@ -10,10 +10,14 @@ export default function App() {
     setTags([...tags, newTag]);
   }
 
+  function handleRemovetag(tagToDelete) {
+    setTags(tags.filter((tag) => tag !== tagToDelete));
+  }
+
   return (
     <main className="app">
       <Form onAddTag={handleAddtag} />
-      <List tags={tags} />
+      <List tags={tags} onDeleteTag={handleRemovetag} />
     </main>
   );
 }
