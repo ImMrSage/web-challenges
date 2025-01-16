@@ -8,11 +8,11 @@ export default function Volumes() {
       <p>{introduction}</p>
       <h2>All Volumes:</h2>
       <ul>
-        <li>
-          <Link href={"/volumes/the-fellowship-of-the-ring"}>
-            The Fellowship of the Ring
-          </Link>
-        </li>
+        {volumes.map((volume) => (
+          <li key={volume.slug}>
+            <Link href={`/volumes/${volume.slug}`}>{volume.title}</Link>
+          </li>
+        ))}
       </ul>
     </>
   );
