@@ -6,8 +6,14 @@ export default function Volumes() {
     <>
       <h1>The Lord of the Rings</h1>
       <p>{introduction}</p>
-      <h2>Volumes:</h2>
-      <ul></ul>
+      <h2>All Volumes:</h2>
+      <ul>
+        <li>
+          <Link href={"/volumes/the-fellowship-of-the-ring"}>
+            The Fellowship of the Ring
+          </Link>
+        </li>
+      </ul>
     </>
   );
 }
