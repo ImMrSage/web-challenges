@@ -15,6 +15,9 @@ const StyledList = styled.ul`
 
 const StyledLink = styled(Link)`
   text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
 `;
 
 export default function App({ Component, pageProps }) {
