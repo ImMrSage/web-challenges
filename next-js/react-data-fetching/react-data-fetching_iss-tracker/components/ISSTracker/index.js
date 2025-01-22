@@ -19,7 +19,11 @@ const fetcher = async (url) => {
 };
 
 export default function ISSTracker() {
-  const { data: coords, error, isLoading } = useSWR(URL, fetcher);
+  const {
+    data: coords,
+    error,
+    isLoading,
+  } = useSWR(URL, fetcher, { refreshInterval: 5000 });
 
   if (error) return <p>Something went wrong...</p>;
   if (isLoading || !coords) return <p>Loading...</p>;
@@ -30,7 +34,7 @@ export default function ISSTracker() {
       <Controls
         longitude={coords.longitude}
         latitude={coords.latitude}
-        onRefresh={mutate()} //{getISSCoords}
+        onRefresh={() => mutate()} //{getISSCoords}
       />
     </main>
   );
