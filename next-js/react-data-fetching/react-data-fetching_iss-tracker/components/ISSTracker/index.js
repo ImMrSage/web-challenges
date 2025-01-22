@@ -1,5 +1,5 @@
 // import { useEffect, useState } from "react";
-import useSWR from "swr";
+import useSWR, { mutate } from "swr";
 import Controls from "../Controls/index";
 import Map from "../Map/index";
 
@@ -22,6 +22,7 @@ export default function ISSTracker() {
   const { data: coords, error, isLoading } = useSWR(URL, fetcher);
 
   if (error) return <p>Something went wrong...</p>;
+  if (isLoading || !coords) return <p>Loading...</p>;
 
   return (
     <main>
@@ -29,7 +30,7 @@ export default function ISSTracker() {
       <Controls
         longitude={coords.longitude}
         latitude={coords.latitude}
-        // onRefresh={getISSCoords}
+        onRefresh={mutate()} //{getISSCoords}
       />
     </main>
   );
