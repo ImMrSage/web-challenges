@@ -6,13 +6,14 @@ export default function AllProducts() {
   const { data: products, error, isLoading } = useSWR("/api/products", fetcher);
 
   if (error) return <div>failed to load</div>;
-  if (isLoading) return <div>loading...</div>;
+  if (isLoading || !products) return <div>loading...</div>;
 
   return (
     <ul>
       {products.map((product) => (
         <li key={product.id}>
-          {product.name} {product.description}
+          {product.name} | {product.description} | Price: {product.price}
+          {product.currency} | {product.category}
         </li>
       ))}
     </ul>
