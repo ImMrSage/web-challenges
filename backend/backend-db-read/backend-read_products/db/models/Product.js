@@ -1,4 +1,4 @@
-import mongoose, { mongo } from "mongoose";
+import mongoose from "mongoose";
 
 const { Schema } = mongoose;
 
@@ -10,6 +10,6 @@ const productSchema = new Schema({
 });
 
 const Product =
-  mongoose.models.Joke || mongoose.model("Product", productSchema);
+  mongoose.models.Product || mongoose.model("Product", productSchema);
 
 export default Product;
