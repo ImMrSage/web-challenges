@@ -54,7 +54,9 @@ export default function Product() {
       >
         Edit
       </button>
-      {isEditMode && <ProductForm onSubmit={handleEditProduct}></ProductForm>}
+      {isEditMode && (
+        <ProductForm onSubmit={handleEditProduct} title="Edit Fish Info" />
+      )}
       <StyledLink href="/">Back to all</StyledLink>
     </ProductCard>
   );
