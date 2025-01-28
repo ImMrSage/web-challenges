@@ -31,6 +31,18 @@ export default function Product() {
     }
   }
 
+  async function handleDeleteProduct() {
+    const response = await fetch(`api/products/${id}`, {
+      method: "DELETE",
+    });
+
+    if (!response.ok) {
+      console.error(response.status);
+      return;
+    }
+    router.push("/");
+  }
+
   if (isLoading) {
     return <h1>Loading...</h1>;
   }
@@ -53,6 +65,14 @@ export default function Product() {
         }}
       >
         Edit
+      </button>
+      <button
+        type="button"
+        onClick={() => {
+          handleDeleteProduct(id);
+        }}
+      >
+        Delete
       </button>
       {isEditMode && (
         <ProductForm onSubmit={handleEditProduct} title="Edit Fish Info" />
