@@ -3,8 +3,8 @@
 ## Value Proposition
 
 **As a** `<movie app user>` <br>
-**I want to** `<explore a list of suggested movies>` <br>
-**so that** `<I could read more about them and add them to the watchlist.>` <br>
+**I want to** `<see a list of suggested movies>` <br>
+**so that** `<I could explore all available movies.>` <br>
 
 ## Description
 
