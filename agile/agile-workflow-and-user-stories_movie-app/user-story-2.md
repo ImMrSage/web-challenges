@@ -2,22 +2,22 @@
 
 ## Value Proposition
 
-**As a** `<movie app user>` <br>
-**I want to** `<click on a movie and view its detailed information>` <br>
-**so that** `<I can learn more about the movie>` <br>
+**As a** movie app user <br>
+**I want to** click on a movie and view its detailed information <br>
+**so that** I can learn more about the movie <br>
 
 ## Description
 
-![wireframe](./assets/
-
-scribble-movie-details-page.png)
-When a user clicks on a movie from the List of Current Movies, they should be taken to a detail page displaying additional information about the selected movie.
+![wireframe](./assets/scribble-movie-details-page.png)
 
 ## Acceptance Criteria
 
 - Clicking on a movie navigates to its detail page.
 - The detail page should display:
-  movie title, release date, a poster and synopsis.
+  - movie title
+  - release date
+  - poster
+  - synopsis
 - The user should be able to go back to the movie list.
 
 ## Tasks
